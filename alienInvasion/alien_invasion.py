@@ -46,7 +46,8 @@ class AlienInvasion:
             self.ship.moving_up = True
         elif event.key == pygame.K_DOWN:
             self.ship.moving_down = True
-
+        elif event.key == pygame.K_q:
+            sys.exit()
 
     def _check_keyup_events(self, event):
         """Реагирует на отпускание клавиш."""
@@ -59,7 +60,6 @@ class AlienInvasion:
             self.ship.moving_up = False
         elif event.key == pygame.K_DOWN:
             self.ship.moving_down = False
-
 
     def _update_screen(self):
         """Обнавляет изображения на экране и отображает новый экран"""
